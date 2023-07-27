@@ -72,6 +72,7 @@ body{
     width: 100%;
     overflow: hidden;
     min-height: 40rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .15);
     /* max-height: 40rem; */
     /* height: 100%; */
 }
