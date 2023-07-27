@@ -130,7 +130,7 @@ body{
     font-size: var(--heading-big-font);
     text-transform: capitalize;
     font-weight: 600;
-    padding: 1rem 6rem;
+    padding: 1rem 0;
     /* border: .1rem solid rgba(0, 0, 0, .7); */
     border: .1rem solid var(--color-main);
     border-radius: 8rem;
@@ -213,5 +213,9 @@ body{
 
     .description:not(:last-child){
         margin-bottom: .3rem;
+    }
+
+    .btn_primary{
+        min-width: 15rem;
     }
 }
