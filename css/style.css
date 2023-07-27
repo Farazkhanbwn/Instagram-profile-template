@@ -187,6 +187,10 @@ body{
 }
 
 @media (max-width: 350px){
+    .row{
+        max-width: 30rem;
+    }
+
     .col-6-of-9{
         width: 100%;
         margin-inline: auto;
@@ -202,12 +206,11 @@ body{
         min-height: 120vh;
     }
 
-    .row{
-        max-width: 30rem;
+    .description{
+        margin: 0 auto;
     }
 
-    .description{
-        min-width: 20rem;
-        margin: 0 auto;
+    .description:not(:last-child){
+        margin-bottom: .3rem;
     }
 }
