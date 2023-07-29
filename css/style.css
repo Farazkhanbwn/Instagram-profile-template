@@ -159,7 +159,6 @@ body{
 .heading_secondary{
     font-size: var(--number-font);
     font-weight: 700;
-    text-align: center;
 }
 
 .description:not(:last-child){
