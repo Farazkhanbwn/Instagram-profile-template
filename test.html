@@ -21,15 +21,30 @@
 
         let boxColor = document.querySelectorAll(".box");
 
+        function getRandom() {
+            return Math.random();
+        }
+
         for(let i = 1 ; i<=boxColor.length ; i++){
-            boxColor[i - 1].style.backgroundColor = "brown";
+
+
+            let letters = "0123456789ABCDEF"
+            let color = "#";
+
+            for (let j = 0; j < 6; j++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+
+            // color += Math.floor(Math.random() * 16);
+            boxColor[i - 1].style.backgroundColor = color;
             boxColor[i - 1].style.width = "calc((100% - 4rem) / 3)";
             boxColor[i - 1].style.height = "30rem";
             boxColor[i - 1].style.float = "left";
             boxColor[i - 1].style.marginRight = "2rem";
             boxColor[i - 1].style.marginBottom = "2rem";
             
-            if (i % 3 == 0){
+            if (i % 3 == 0)
+            {
                 boxColor[i-1].style.marginRight = 0;
             }
         }
