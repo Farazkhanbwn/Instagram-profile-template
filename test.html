@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <script>
+
+        let boxColor = document.querySelectorAll(".box");
+
+        for(let i = 1 ; i<=boxColor.length ; i++){
+            boxColor[i - 1].style.backgroundColor = "brown";
+            boxColor[i - 1].style.width = "calc((100% - 4rem) / 3)";
+            boxColor[i - 1].style.height = "30rem";
+            boxColor[i - 1].style.float = "left";
+            boxColor[i - 1].style.marginRight = "2rem";
+            boxColor[i - 1].style.marginBottom = "2rem";
+            
+            if (i % 3 == 0){
+                boxColor[i-1].style.marginRight = 0;
+            }
+        }
+
+        for(let j = 1; j<= boxColor.length ; j++)
+        {   
+            if (j % 2 == 0){
+                boxColor[j - 1].style.backgroundColor = "blue";
+            }
+        }
+
+        for(let j = 1; j<= boxColor.length ; j++)
+        {   
+            if (j % 4 == 0){
+                boxColor[j - 1].style.backgroundColor = "green";
+            }
+        }
+
+    </script>
+</body>
+</html>

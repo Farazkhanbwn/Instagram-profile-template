@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+.center{
+    width: 300px;
+    height: 300px;
+    /* background-color: rgb(35, 148, 163); */
+    border-radius: 3px;
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50% , -50%); */
+}
+
